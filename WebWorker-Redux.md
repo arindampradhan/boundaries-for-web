@@ -14,5 +14,7 @@ The target is to port the redux stores in web workers and only make react use th
 * Project found: 
     * [redux-worker-middleware](https://github.com/keyz/redux-worker-middleware) not complete solution, only migrates reducers to workers.
     * [redux-in-worker](https://github.com/dai-shi/redux-in-worker) is performant but will have issues with middleware using history api or localstorage.
-    * `TODO:` Workaround: Use `comlink` & `worker-plugin` manually where needed or wrap both to make it easier to use.
+* Workaround: Use `comlink` & `worker-plugin` manually where needed or wrap both to make it easier to use.
+* [Eslint configuration to target worker](https://eslint.org/docs/4.0.0/user-guide/configuring#specifying-environments) add those to worker files while writing code so that you will get errors while using window api methods.
+
 * **to be continued...**
